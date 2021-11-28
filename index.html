@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>complete responsive wedding planner website design tutorial</title>
+
+    <!-- font awsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!--css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+
+    <header>
+      <a href="#" class="logo">WMS</a>
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#contact">contact</a>
+        <a href="hall gallery/web.html">Halls</a>
+      </nav>
+    </header>
+
+   
+
+    <section class="home" id="home">
+      <div class="content">
+        <span>wedding planner agency</span>
+        <h3>we make every moment special!</h3>
+        <a href="Register/form.html" class="btn">BOOK NOW</a>
+      </div>
+    </section>
+
+  
+
+    <section class="step-container">
+      <div class="step">
+        <span>01</span>
+        <h3>engagement</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum porro
+          iure esse laudantium aspernatur, veniam sunt provident eius cum ab.
+        </p>
+        <a href="#" class="btn">learm more</a>
+      </div>
+
+      <div class="step">
+        <span>02</span>
+        <h3>save the date</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum porro
+          iure esse laudantium aspernatur, veniam sunt provident eius cum ab.
+        </p>
+        <a href="#" class="btn">learm more</a>
+      </div>
+
+      <div class="step">
+        <span>03</span>
+        <h3>wedding ceremony</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum porro
+          iure esse laudantium aspernatur, veniam sunt provident eius cum ab.
+        </p>
+        <a href="#" class="btn">learm more</a>
+      </div>
+    </section>
+
+   
+
+   
+
+
+    <section class="contact" id="contact">
+      <div class="heading">
+        <h1>contact us</h1>
+        <img src="images/header-img.png" alt="" />
+      </div>
+
+      <form action="">
+        <div class="inputBox">
+          <input type="text" placeholder="your name" />
+          <input type="email" placeholder="your email" />
+        </div>
+        <div class="inputBox">
+          <input type="number" placeholder="your number" />
+          <input type="text" placeholder="your address" />
+        </div>
+        <textarea
+          placeholder="say something"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="submit" value="send message" class="btn" />
+      </form>
+    </section>
+
+   
+
+    <div class="footer">
+    Made with love by<span> Jatin Sohlot</span>
+    </div>
+
+    <script>
+      let menu = document.querySelector("#menu-bar");
+      let navbar = document.querySelector(".navbar");
+
+      menu.addEventListener("click", () => {
+        menu.classList.toggle("fa-times");
+        navbar.classList.toggle("nav-toggle");
+      });
+
+      window.onscroll = () => {
+        menu.classList.remove("fa-times");
+        navbar.classList.remove("nav-toggle");
+      };
+    </script>
+  </body>
+</html>
